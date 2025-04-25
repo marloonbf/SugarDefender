@@ -88,10 +88,16 @@
       50% { transform: scale(1.07); }
       100% { transform: scale(1); }
     }
-    .stars {
-      font-size: 20px;
-      color: #fbbf24;
-      margin-top: 10px;
+    .stars, .payment, .guarantee {
+      margin-top: 30px;
+    }
+    .stars img, .payment img, .guarantee img {
+      max-width: 180px;
+    }
+    .testimonial {
+      max-width: 300px;
+      border-radius: 12px;
+      margin: 40px auto 0;
     }
     footer {
       text-align: center;
@@ -109,8 +115,9 @@
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'AW-17027680669');
-
-    // Evento de conversão
+  </script>
+  <!-- Event snippet for Compra conversion -->
+  <script>
     gtag('event', 'conversion', {
         'send_to': 'AW-17027680669/quQdCN-Czb0aEJ2Tt7c_',
         'value': 1.0,
@@ -120,7 +127,6 @@
   </script>
 </head>
 <body>
-
   <header>
     ✅ Official Site – Natural Wellness Support with Fast U.S. Shipping!
   </header>
@@ -129,7 +135,7 @@
     <h1>Support Healthy Sugar Balance – Naturally</h1>
     <p class="subheadline">Thousands are adding Sugar Defender to their daily routine. Discover the difference it can make for you.</p>
 
-    <img class="product-img" src="./img.jpeg" alt="Sugar Defender Bottle" id="zoomable" />
+    <img class="product-img" src="./SUGARDEFENDERx6-500px (1).png" alt="Sugar Defender Bottles" />
 
     <ul class="features">
       <li>Supports natural sugar balance</li>
@@ -138,19 +144,31 @@
       <li>Shipped fast and discreetly from the USA</li>
     </ul>
 
-    <div class="stars">★★★★★ Rated 4.8/5 by 12,000+ Customers</div>
+    <div class="stars">
+      <img src="./stars.png" alt="4.8 stars rating" />
+      <p><strong>Rated 4.8/5 by 12,000+ Customers</strong></p>
+    </div>
 
     <a class="cta-btn"
        href="https://sugardefender24.com/d/order-now.php#aff=marloonbfss"
        target="_blank"
-       onclick="gtag('event', 'conversion', {'send_to': 'AW-17027680669/quQdCN-Czb0aEJ2Tt7c_'});">
+       onclick="gtag('event', 'conversion', {'send_to': 'AW-17027592099/LV34CLuSo7waEKPfsbc_'});">
       YES, I WANT MY DISCOUNT!
     </a>
+
+    <div class="guarantee">
+      <img src="./money-back.png" alt="Money back guarantee" />
+    </div>
+
+    <div class="payment">
+      <img src="./cards.png" alt="Payment options" />
+    </div>
+
+    <img class="testimonial" src="./person4-m.jpg" alt="Happy customer holding Sugar Defender" />
   </div>
 
   <footer>
     &copy; 2025 Sugar Defender™ – All Rights Reserved
   </footer>
-
 </body>
 </html>
